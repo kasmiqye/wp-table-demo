@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+#tableContainer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.data-table {
+    width: 900px;
+    border-collapse: separate;
+    border-spacing: 4px;
+    background-color: white;
+}
+
+.data-table th,
+.data-table td:not(.chart-cell) {
+    padding: 14px;
+    border-radius: 6px;
+    background-color: #eeeeee;
+}
+
+.data-table tbody td:nth-child(2) {
+    background-color: #e6f2ff;
+}
+
+.percent-change {
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.percent-change.positive {
+    color: #1a7f37;
+}
+
+.percent-change.negative {
+    color: #d93025;
+}
+
+.data-table td:nth-child(2),
+.data-table td:nth-child(3),
+.data-table td:nth-child(4) {
+    text-align: right;
+}
+
+.bg-positive {
+    background-color: #e6f4ea !important;
+}
+
+.bg-negative {
+    background-color: #fce8e6 !important;
+}
+
+.chart-cell {
+    background-color: white;
+    height: 250px;
+}
+
+.chart-cell canvas {
+    width: 600px !important;
+    height: 100% !important;
+    display: block;
+    margin: 0 auto; 
+}
